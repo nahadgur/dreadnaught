@@ -6,7 +6,7 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="relative h-[70vh] w-full flex flex-col justify-end pb-12 px-6 md:px-12 lg:px-24 overflow-hidden">
+      <section className="relative h-[60vh] w-full flex flex-col justify-end pb-12 px-6 md:px-12 lg:px-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[60%] h-[50%] bg-white/10 blur-[100px] rounded-full" />
           <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
