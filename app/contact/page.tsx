@@ -1,5 +1,6 @@
 'use client';
 
+import PageHero from '@/components/PageHero';
 import Footer from '@/components/Footer';
 import { motion } from 'motion/react';
 import { useState } from 'react';
@@ -15,31 +16,17 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-black text-white">
-      <section className="relative h-[60vh] w-full flex flex-col justify-end pb-12 px-6 md:px-12 lg:px-24 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[60%] h-[50%] bg-white/10 blur-[100px] rounded-full" />
-          <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="contact-grid" width="60" height="60" patternUnits="userSpaceOnUse">
-                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#contact-grid)" />
-          </svg>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black" />
-        </div>
+      <PageHero
+        title="Say Hello"
+        subtitle="Whether you have a project in mind or just want to chat about the future of the web, we'd love to hear from you."
+      />
 
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-24">
+      <section className="py-24 px-6 md:px-12 lg:px-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
           <div>
-            <h1 className="font-display text-[8vw] leading-[0.85] tracking-tighter uppercase font-bold text-white mb-6">
-              Say<br/>Hello
-            </h1>
-            <p className="text-white/50 font-sans max-w-md mb-12">
-              Whether you have a project in mind or just want to chat about the future of the web, we&apos;d love to hear from you.
-            </p>
             <div className="flex flex-col gap-4">
               <h4 className="text-white/50 font-mono text-xs uppercase tracking-widest mb-2">Direct Contact</h4>
-              <a href="mailto:hello@vanguard.com" className="text-2xl font-display font-bold uppercase tracking-tighter hover:text-[var(--color-neon)] transition-colors">hello@vanguard.com</a>
+              <a href="mailto:hello@dreadnaught.com" className="text-2xl font-display font-bold uppercase tracking-tighter hover:text-[var(--color-neon)] transition-colors">hello@dreadnaught.com</a>
               <a href="tel:+1234567890" className="text-2xl font-display font-bold uppercase tracking-tighter hover:text-[var(--color-neon)] transition-colors">+1 (234) 567-890</a>
             </div>
           </div>
@@ -52,7 +39,7 @@ export default function ContactPage() {
               className="h-full flex flex-col items-center justify-center text-center py-24"
             >
               <h3 className="font-display text-4xl font-bold uppercase tracking-tighter text-[var(--color-neon)] mb-4">Message Sent</h3>
-              <p className="text-white/70 font-sans">We&apos;ll get back to you as soon as possible.</p>
+              <p className="text-white/70 font-sans">We'll get back to you as soon as possible.</p>
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-8">
@@ -73,8 +60,8 @@ export default function ContactPage() {
               </button>
             </form>
           )}
+          </div>
         </div>
-      </div>
       </section>
       <Footer />
     </main>
