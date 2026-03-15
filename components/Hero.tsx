@@ -52,12 +52,12 @@ export default function Hero() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-xs md:max-w-sm text-right self-end"
+          className="max-w-xs md:max-w-sm md:text-right md:self-end"
         >
           <p className="text-sm md:text-base text-white/70 font-sans leading-relaxed">
             We are an award-winning creative agency crafting immersive digital experiences for the brands of tomorrow.
           </p>
-          <div className="mt-6 flex justify-end gap-4">
+          <div className="mt-6 flex md:justify-end gap-4">
             <Link href="/work" className="px-6 py-3 rounded-full border border-white/20 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-300">
               Our Work
             </Link>
