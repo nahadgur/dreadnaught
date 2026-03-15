@@ -15,7 +15,7 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-black text-white">
-      <section className="relative pt-32 pb-24 px-6 md:px-12 lg:px-24 overflow-hidden">
+      <section className="relative h-[60vh] w-full flex flex-col justify-end pb-12 px-6 md:px-12 lg:px-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[60%] h-[50%] bg-white/10 blur-[100px] rounded-full" />
           <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@ export default function ContactPage() {
 
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-24">
           <div>
-            <h1 className="font-display text-6xl md:text-9xl font-bold uppercase tracking-tighter text-white mb-8">
+            <h1 className="font-display text-[8vw] leading-[0.85] tracking-tighter uppercase font-bold text-white mb-6">
               Say<br/>Hello
             </h1>
             <p className="text-white/50 font-sans max-w-md mb-12">
