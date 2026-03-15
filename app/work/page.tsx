@@ -19,7 +19,7 @@ export default function WorkPage() {
         </div>
         
         <div className="relative z-10">
-          <h1 className="font-display text-[10vw] leading-[0.85] tracking-tighter uppercase font-bold text-white mb-6">
+          <h1 className="font-display text-[8vw] leading-[0.85] tracking-tighter uppercase font-bold text-white mb-6">
             Our<br/>Works
           </h1>
           <p className="text-white/70 font-sans max-w-md text-sm md:text-base leading-relaxed">
