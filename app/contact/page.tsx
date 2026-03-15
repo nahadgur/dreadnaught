@@ -21,8 +21,8 @@ export default function ContactPage() {
         subtitle="Whether you have a project in mind or just want to chat about the future of the web, we'd love to hear from you."
       />
 
-      <section className="py-24 px-6 md:px-12 lg:px-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
+      <section className="-mt-8 pb-24 px-6 md:px-12 lg:px-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
             <div className="flex flex-col gap-4">
               <h4 className="text-white/50 font-mono text-xs uppercase tracking-widest mb-2">Direct Contact</h4>
@@ -39,7 +39,7 @@ export default function ContactPage() {
               className="h-full flex flex-col items-center justify-center text-center py-24"
             >
               <h3 className="font-display text-4xl font-bold uppercase tracking-tighter text-[var(--color-neon)] mb-4">Message Sent</h3>
-              <p className="text-white/70 font-sans">We'll get back to you as soon as possible.</p>
+              <p className="text-white/70 font-sans">We&apos;ll get back to you as soon as possible.</p>
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-8">
