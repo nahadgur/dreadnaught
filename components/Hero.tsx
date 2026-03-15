@@ -49,15 +49,15 @@ export default function Hero() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-8 max-w-xs md:max-w-sm md:absolute md:bottom-0 md:right-0 md:text-right"
+          className="mt-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6"
         >
-          <p className="text-sm md:text-base text-white/70 font-sans leading-relaxed">
+          <p className="text-sm md:text-base text-white/70 font-sans leading-relaxed max-w-md">
             We are an award-winning creative agency crafting immersive digital experiences for the brands of tomorrow.
           </p>
-          <div className="mt-6 flex md:justify-end gap-4">
+          <div className="flex gap-4">
             <Link href="/work" className="px-6 py-3 rounded-full border border-white/20 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-300">
               Our Work
             </Link>
