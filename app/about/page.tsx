@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-black text-white">
-      <section className="relative pt-32 pb-24 px-6 md:px-12 lg:px-24 overflow-hidden">
+      <section className="relative h-[60vh] w-full flex flex-col justify-end pb-12 px-6 md:px-12 lg:px-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[60%] h-[50%] bg-white/10 blur-[100px] rounded-full" />
           <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +19,7 @@ export default function AboutPage() {
         </div>
 
         <div className="relative z-10">
-          <h1 className="font-display text-6xl md:text-9xl font-bold uppercase tracking-tighter text-white mb-12">
+          <h1 className="font-display text-[8vw] leading-[0.85] tracking-tighter uppercase font-bold text-white mb-6">
             We are<br/>Dreadnaught
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
