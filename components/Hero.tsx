@@ -22,7 +22,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
-        <div className="flex flex-col">
+        <div className="flex flex-col min-w-0">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-xs md:max-w-sm md:text-right md:self-end"
+          className="max-w-xs md:max-w-sm md:text-right md:self-end shrink-0"
         >
           <p className="text-sm md:text-base text-white/70 font-sans leading-relaxed">
             We are an award-winning creative agency crafting immersive digital experiences for the brands of tomorrow.
