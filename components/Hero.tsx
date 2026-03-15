@@ -21,7 +21,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-8">
+      <div className="relative z-10">
         <div className="flex flex-col">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -42,7 +42,7 @@ export default function Hero() {
             <div className="w-16 h-16 md:w-32 md:h-32 rounded-full border border-white/30 flex items-center justify-center backdrop-blur-md">
               <ArrowDownRight className="w-8 h-8 md:w-16 md:h-16 text-white" />
             </div>
-            <h1 className="font-display text-[12vw] md:text-[8vw] leading-[0.85] tracking-tighter uppercase font-bold text-transparent text-outline">
+            <h1 className="font-display text-[12vw] leading-[0.85] tracking-tighter uppercase font-bold text-transparent text-outline">
               Dreadnaught
             </h1>
           </motion.div>
@@ -52,7 +52,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-xs md:max-w-sm md:text-right md:self-end"
+          className="mt-8 max-w-xs md:max-w-sm md:absolute md:bottom-0 md:right-0 md:text-right"
         >
           <p className="text-sm md:text-base text-white/70 font-sans leading-relaxed">
             We are an award-winning creative agency crafting immersive digital experiences for the brands of tomorrow.
