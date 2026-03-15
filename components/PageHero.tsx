@@ -9,7 +9,7 @@ interface PageHeroProps {
 
 export default function PageHero({ title, subtitle }: PageHeroProps) {
   return (
-    <section className="relative h-[60vh] w-full flex flex-col justify-end pb-12 px-6 md:px-12 lg:px-24 overflow-hidden">
+    <section className="relative h-[60vh] w-full flex flex-col justify-center pt-24 px-6 md:px-12 lg:px-24 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[60%] h-[50%] bg-white/10 blur-[100px] rounded-full" />
@@ -29,7 +29,7 @@ export default function PageHero({ title, subtitle }: PageHeroProps) {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.85] tracking-tighter uppercase font-bold text-white mb-6"
+          className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.85] tracking-tighter uppercase font-bold text-white mb-6"
         >
           {title}
         </motion.h1>
